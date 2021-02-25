@@ -40,3 +40,11 @@ export function utcTimezones() {
     'UTC -12',
   ]
 }
+
+export function utcOf(timezoneOffset) {
+  const h = - (timezoneOffset / 60 | 0)
+  const minutes = timezoneOffset % 60
+  const mm = minutes !== 0 ? ':' + Math.abs(minutes).toString() : ''
+  const plus = h >= 0 ? '+' : ''
+  return `UTC ${plus}${h}${mm}`
+}
