@@ -1,4 +1,4 @@
-import {utcTimezones, utcOf} from "../index";
+import {utcTimezones, utcOf, currentUtc} from "../index";
 
 describe('Timezones', () => {
   it('should have 38 UTC timezones', () => {
@@ -21,5 +21,8 @@ describe('Timezones', () => {
     it('should get "UTC +8:45', () => {
       expect(utcOf(-525)).toBe('UTC +8:45')
     })
+    it('should print correct UTC', () => {
+      console.log(currentUtc());
+    });
   })
 })

@@ -48,3 +48,7 @@ export function utcOf(timezoneOffset) {
   const plus = h >= 0 ? '+' : ''
   return `UTC ${plus}${h}${mm}`
 }
+
+export function currentUtc() {
+  return utcOf(new Date().getTimezoneOffset())
+}
