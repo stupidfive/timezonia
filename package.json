@@ -4,11 +4,12 @@
   "description": "A timezone library",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "test": "node --experimental-vm-modules node_modules/.bin/jest"
   },
   "author": "George Wu",
   "license": "MIT",
   "devDependencies": {
     "jest": "^26.6.3"
-  }
+  },
+  "type": "module"
 }
