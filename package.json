@@ -1,6 +1,6 @@
 {
   "name": "timezonia",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A timezone library",
   "main": "index.js",
   "scripts": {
